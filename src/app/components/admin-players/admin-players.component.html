@@ -1,0 +1,20 @@
+<div class="container">
+    <table class="table">
+        <tr>
+            <th>Player Name</th>
+            <th>Player Nbr</th>
+            <th>Age</th>
+            <th>Poste</th>
+            <th>Actions</th>
+        </tr>
+        <tr *ngFor="let p of players">
+            <td>{{p.name}}</td>
+            <td>{{p.nbr}}</td>
+            <td>{{p.age}}</td>
+            <td>{{p.poste}}</td>
+            <td>
+                <button class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+    </table>
+</div>
